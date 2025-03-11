@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Management</title>
+    <link rel="stylesheet" href="/css/styles.css">
+<body>
+    <div class="container">
+        <h2>Item Management</h2>
+
+        
+        <form id="itemForm">
+            <input type="hidden" id="itemId">
+
+            <label>Item Name:</label>
+            <input type="text" id="name" required>
+
+            <label>Item Type:</label>
+            <select id="itemType" required></select>
+
+            <label>Purchase Date:</label>
+            <input type="date" id="purchaseDate" required>
+
+            <label>Stock Available:</label>
+            <input type="checkbox" id="stockAvailable">
+
+            <button type="submit">Add Item</button>
+        </form>
+
+        <h3>Items List</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Purchase Date</th>
+                    <th>In Stock</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="itemsTable"></tbody>
+        </table>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
